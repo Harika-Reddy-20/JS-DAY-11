@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question</h1>
+    <h4>Given array of students marks [23, 45, 67, 78, 91], add 10 in all the elements of an array by using map and forEach function</h4>
+    <pre>  
+        var marks = [23, 45, 67, 78, 91];
+        const add = marks.map(x => x+10);
+        console.log(add);
+        const mfeach = marks.forEach((x,index) => {console.log (x+10)});</pre>
+        <h4>Given array of student marks [23, 45, 67, 78, 91], find out how many students have got marks less than 65 and return the array.</h4>
+        <pre>
+            var marks = [23, 45, 67, 78, 91];
+        const totalmarks = marks.filter (x => x>65);
+        console.log(totalmarks);
+        </pre>
+        <h4>Return the sum of all the marks of students present in given array [23, 45, 67, 78, 91]</h4>
+        <pre>
+            var arr = [23, 45, 67, 78, 91];
+            var res = arr.reduce((sum,x) => sum = sum+x );
+            console.log(res);
+        </pre>
+        <h5>
+            Replace ""Peter"" with ""John"" in whole string : Given String : ""Peter is a good friend of Mike. Peter is working in a IT company in Australia"".
+        </h5>
+        <pre>
+            const str = "Peter is a good friend of Mike. Peter is working in a IT company in Australia";
+            const z = str.replaceAll("Peter", "John");
+            console.log(zs);
+        </pre>
+        <h4>Reverse a given string ""Hello this is me"" , result should be ""me is this Hello"".</h4>
+        <pre> const x = "Hello this is me";
+            const y = x.split(" ").reverse( ).join(" ");
+            console.log(y);</pre>
+            <h4>Create object by all 3 possible ways and explain with example</h4>
+            <pre> 
+                let user = {
+                    name: "Harika",
+                    age: 21,
+                 
+                }
+                console.log(user.name);
+                console.log(user["name"]);
+    
+                let myObj = new Object();
+                myObj.name = 'Harika';
+                myObj.age= 21;
+               
+                
+                console.log(myObj);
+                const keys =Object.keys(myObj);
+                console.log(keys);
+                const values = Object.values(myObj);
+                console.log(values);
+    
+                let newObj = Object.create(myObj);
+                console.log(newObj);</pre>
+                <h5>Create an object contain name age salary as the properties, retrieve key and values in separate arrays</h5>
+                <pre>        
+                    let myObj = new Object();
+                    myObj.name = 'Harika';
+                    myObj.age= 21;
+                  
+            
+                    const keys =Object.keys(myObj);
+                    console.log(keys);
+            
+                    const values = Object.values(myObj);
+                    console.log(values);</pre>
+                    <h5>Explain call bind and apply in JS</h5>
+                    <p>Call : each and every argument is passed to the fun will be passed individually.</p>
+                    <p>Apply:each and every argument is passed to the fun will be passed in the form an array.
+                    </p>
+                    <p>Bind: it will return a new function and this new fun you can use anytime and anywhere.</p>
+                    <h4>Explain Prototype Chaining:</h4>
+                    <p>When ever we create a object it is always attached with a Object prototype which has some hidden properities.</p>
+                    <pre>  
+                        let arr = [];
+                        Object.prototype 
+        
+                        arr.__proto__ : (array properties)
+        
+                        arr.__proto__.__proto__ : (returns Object.prototype Properites)
+        
+                        arr.__proto__.__proto__.__proto__ :(returns null)</pre>
+    <script src="./index.js"></script>    
+</body>
+</html>
